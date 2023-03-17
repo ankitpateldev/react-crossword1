@@ -1,0 +1,42 @@
+
+{
+  "books": [
+    {
+      "id":1,
+      "image": "https://i.imgur.com/sP3SO10.jpg"   ,
+      "bookname": "Ask The Monk"    ,
+      "auther":   "Charan Das"  ,
+      "price": 564
+    },
+    {
+      "id":1,
+      "image": "https://i.imgur.com/d22gNfZ.jpg"   ,
+      "bookname": "happy to help"    ,
+      "auther":   "Charan Das"  ,
+      "price": 564
+    },
+    {
+      "id": 3,
+      "image": "https://i.imgur.com/rf20bb5.jpg",
+      "bookname": "The Alchemist",
+      "auther": "Paulo Coelho",
+      "price": 799
+    },
+    {
+      "id": 4,
+      "image": "https://i.imgur.com/l3gi4sY.jpg",
+      "bookname": "To Kill a Mockingbird",
+      "auther": "Harper Lee",
+      "price": 299
+    },
+    {
+      "id": 5,
+      "image": "https://i.imgur.com/xM9Nl1l.jpg",
+      "bookname": "The Great Gatsby",
+      "auther": "F. Scott Fitzgerald",
+      "price": 499
+    }
+    
+  ]
+  
+}
