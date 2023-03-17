@@ -3,9 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@popperjs/core": "^2.11.6",
     "@types/react": ">=16.14.8",
     "bootstrap": "^5.2.3",
+    "font-awesome": "^4.7.0",
     "jquery": ">=1.8.0",
     "json-server": "^0.17.2",
     "react": "^18.2.0",

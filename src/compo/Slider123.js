@@ -1,5 +1,10 @@
 import React from 'react';
 import Data from '../server/imgData.json';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(faCartShopping);
 
 // import 'slick-carousel/slick/slick.css';
 // import "slick-carousel/slick/slick-theme.css";
@@ -45,11 +50,11 @@ function Slider123() {
   };
 
   return (
-    <div className="container">
+    <div className="container justify-content: space-evenly">
       <div className="row">
         <Slider {...settings}>
           {Data.books.map((value) => (
-            <div className="d-flex flex-row" key={value.id}>
+            <div className="d-flex flex-row justify-content: space-evenly" key={value.id}>
               <Card className="g-4 shadow p-2">
                 <Card.Img
                   variant="top"
@@ -57,23 +62,27 @@ function Slider123() {
                   className="img-fluid"
                 />
                 <Card.Body>
-                  <Card.Title> {value.bookname}</Card.Title>
-                  <Card.Text>
-                    <p>{value.auther} </p>
-                    <h5> {value.price} </h5>
-                  </Card.Text>
-                  <Button
-                    variant="dark"
-                    style={{ backgroundColor: 'black', color: 'white' }}
-                    onMouseOver={(e) =>
-                      (e.target.style.backgroundColor = 'yellow')
-                    }
-                    onMouseOut={(e) =>
-                      (e.target.style.backgroundColor = 'black')
-                    }
-                  >
-                    Buy Now
-                  </Button>
+                  <Card.Title className='author'> {value.bookname}</Card.Title>
+                  <Card.Text >
+  <p className='author'>{value.auther}</p>
+  <div className="d-flex justify-content-between align-items-center">
+    <h5>${value.price}</h5>
+    <Button
+      variant="dark"
+      style={{ backgroundColor: 'black', color: 'white' }}
+      onMouseOver={(e) => (e.target.style.backgroundColor = 'yellow')}
+      onMouseOut={(e) => (e.target.style.backgroundColor = 'black')}
+    >
+       <FontAwesomeIcon
+      icon="cart-shopping"
+      style={{ marginRight: '5px' }}
+    />
+      Buy Now
+    </Button>
+  </div>
+</Card.Text>
+
+                
                 </Card.Body>
               </Card>
             </div>
