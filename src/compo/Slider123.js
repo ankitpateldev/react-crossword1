@@ -68,14 +68,20 @@ function Slider123() {
   <div className="d-flex justify-content-between align-items-center">
     <h5>${value.price}</h5>
     <Button
-      variant="dark"
-      style={{ backgroundColor: 'black', color: 'white' }}
-      onMouseOver={(e) => (e.target.style.backgroundColor = 'yellow')}
-      onMouseOut={(e) => (e.target.style.backgroundColor = 'black')}
-    >
+  variant="dark"
+  style={{ backgroundColor: 'black', color: 'white', fontSize:'14px'}}
+  onMouseOver={(e) => {
+    e.target.style.backgroundColor = 'yellow';
+    e.target.style.color = 'black';
+  }}
+  onMouseOut={(e) => {
+    e.target.style.backgroundColor = 'black';
+    e.target.style.color = 'white';
+  }}
+>
        <FontAwesomeIcon
       icon="cart-shopping"
-      style={{ marginRight: '5px' }}
+      style={{ marginRight: '3px' }} flip
     />
       Buy Now
     </Button>
