@@ -9,3 +9,15 @@ p {
   overflow: hidden;
   white-space: nowrap;
 }
+.logo-img {
+  max-width: 200px; /* set maximum width */
+  max-height: 100px; /* set maximum height */
+}
+
+@media only screen and (max-width: 768px) {
+  /* decrease size for screens smaller than 768px */
+  .logo-img {
+    max-width: 100px;
+    max-height: 75px;
+  }
+}

@@ -9,8 +9,8 @@ function Firstnav() {
   return (
     <div>
       <Navbar bg="black" variant="dark" expand="lg">
-        <Navbar.Brand href="#home">
-          <img src="https://i.imgur.com/6jZgj9W.png" alt="Image" />
+        <Navbar.Brand >
+          <img src="https://i.imgur.com/6jZgj9W.png" alt="Image" class="logo-img" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
