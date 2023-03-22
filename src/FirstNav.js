@@ -4,6 +4,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import  {BrowserRouter as Router, Route, Link, Routes} from "react-router-dom";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(faCartShopping);
 
 function Firstnav() {
   return (
@@ -137,12 +142,16 @@ function Firstnav() {
               variant="warning"
             
               style={{ height: '35px',alignSelf: 'center' ,marginLeft:'10px'}}
-            >
-            <span style={{ fontWeight: 'bold', color: 'blue', marginTop: '-7px' }}>My Cart</span>
+            >    
+            <span style={{ fontWeight: 'bold', color: 'blue', marginTop: '-7px' }}>     <FontAwesomeIcon
+                          icon="cart-shopping"
+                          style={{ marginRight: '3px' }}
+                          flip/> My Cart</span>
               <img
                 src={'https://i.imgur.com/ZJX7uMO.png'}
                 style={{ width: '20px',verticalAlign: 'middle', marginTop: '-7px',marginLeft:'7px' }}
               />
+
             </Button>
                 </Link>
               

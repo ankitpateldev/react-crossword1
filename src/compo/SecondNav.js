@@ -59,7 +59,7 @@ function BasicExample() {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav
-            className="ml-auto justify-content-center"
+            className=" justify-content-center"
             style={{
               display: 'flex',
               justifyContent: 'center',
@@ -86,20 +86,7 @@ function BasicExample() {
             background-color: #212529;
             border-radius: 5px;
           }
-           .navbar-light .navbar-nav .nav-link {
-            color: #212529;
-           
-          }
-          
-          .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link.active {
-            color: #fff;
-            background-color: #212529;
-          }
-          
-          .navbar-light .navbar-nav .nav-link:hover:focus, .navbar-light .navbar-nav .nav-link.active:hover {
-            color: #fff;
-            background-color: #212529;
-          }
+   
         `}
         
       </style>
