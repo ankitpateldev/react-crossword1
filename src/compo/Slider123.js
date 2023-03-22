@@ -54,7 +54,10 @@ function Slider123() {
       <div className="row">
         <Slider {...settings}>
           {Data.books.map((value) => (
-            <div className="d-flex flex-row justify-content: space-evenly" key={value.id}>
+            <div
+              className="d-flex flex-row justify-content: space-evenly"
+              key={value.id}
+            >
               <Card className="g-4 shadow p-2">
                 <Card.Img
                   variant="top"
@@ -62,33 +65,36 @@ function Slider123() {
                   className="img-fluid"
                 />
                 <Card.Body>
-                  <Card.Title className='author'> {value.bookname}</Card.Title>
-                  <Card.Text >
-  <p className='author'>{value.auther}</p>
-  <div className="d-flex justify-content-between align-items-center">
-    <h5>${value.price}</h5>
-    <Button
-  variant="dark"
-  style={{ backgroundColor: 'black', color: 'white', fontSize:'14px'}}
-  onMouseOver={(e) => {
-    e.target.style.backgroundColor = 'yellow';
-    e.target.style.color = 'black';
-  }}
-  onMouseOut={(e) => {
-    e.target.style.backgroundColor = 'black';
-    e.target.style.color = 'white';
-  }}
->
-       <FontAwesomeIcon
-      icon="cart-shopping"
-      style={{ marginRight: '3px' }} flip
-    />
-      Buy Now
-    </Button>
-  </div>
-</Card.Text>
-
-                
+                  <Card.Title className="author"> {value.bookname}</Card.Title>
+                  <Card.Text>
+                    <p className="author">{value.auther}</p>
+                    <div className="d-flex justify-content-between align-items-center">
+                      <h5>₹{value.price}</h5>
+                      <Button
+                        variant="dark"
+                        style={{
+                          backgroundColor: 'black',
+                          color: 'white',
+                          fontSize: '14px',
+                        }}
+                        onMouseOver={(e) => {
+                          e.target.style.backgroundColor = 'yellow';
+                          e.target.style.color = 'black';
+                        }}
+                        onMouseOut={(e) => {
+                          e.target.style.backgroundColor = 'black';
+                          e.target.style.color = 'white';
+                        }}
+                      >
+                        <FontAwesomeIcon
+                          icon="cart-shopping"
+                          style={{ marginRight: '3px' }}
+                          flip
+                        />
+                        Buy Now
+                      </Button>
+                    </div>
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </div>
